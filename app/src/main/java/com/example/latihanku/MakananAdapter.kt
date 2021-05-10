@@ -34,13 +34,13 @@ class MakananAdapter(val arrayList: ArrayList<MakananModel>,
         holder.itemView.setOnClickListener(){
             val model = arrayList.get(position)
 
-            var gsepatu : String = model.nmmakanan
+            var gmakanan : String = model.nmmakanan
             var gDesc : String = model.dmakanan
             var gHarga : Int = model.hrgmakanan.toString().toInt()
             var gImg : Int = model.fotomakanan
 
             val intent = Intent(context , Order::class.java)
-            intent.putExtra("pSepatu" , gsepatu)
+            intent.putExtra("pMakanan" , gmakanan)
             intent.putExtra("pDesc" , gDesc)
             intent.putExtra("pHarga" , gHarga)
             intent.putExtra("pImg" , gImg)

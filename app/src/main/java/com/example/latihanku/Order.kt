@@ -23,13 +23,13 @@ class Order : AppCompatActivity() {
         actionBar!!.setDisplayHomeAsUpEnabled(true)
 
         var intent = intent
-        val aSepatu = intent.getStringExtra("pSepatu")
+        val aMakanan = intent.getStringExtra("pMakanan")
         val aDesc = intent.getStringExtra("pDesc")
         val aHarga = intent.getIntExtra("pHarga" , 0)
         val aImg = intent.getIntExtra("pImg" , 0 )
 
-        actionBar.setTitle("Order " +aSepatu)
-        SepatuOrd.text = aSepatu
+        actionBar.setTitle("Order " +aMakanan)
+        menuOrd.text = aMakanan
         desOrd.text = aDesc
         hargaOrd.text = aHarga.toString()
         imgOrder.setImageResource(aImg)
@@ -59,23 +59,17 @@ class Order : AppCompatActivity() {
             display(minteger)
         }
 
-        OrderLagi.setOnClickListener {
-            onBackPressed()
-        }
 
-        Bayar.setOnClickListener {
-            var namaSepatu = SepatuOrd.text.toString()
+        btnbayar.setOnClickListener {
+            var namaMakanan = menuOrd.text.toString()
             var jumlahbarang = JmlOrd.text.toString()
             var jumlahharga = ToHardOrd.text.toString()
 
             val intent = Intent(this , Bayar::class.java)
-            intent.putExtra("NamaSepatu", namaSepatu)
+            intent.putExtra("NamaMakanan", namaMakanan)
             intent.putExtra("JmlBrg" , jumlahbarang)
             intent.putExtra("TotalHarga" , jumlahharga)
             startActivity(intent)
-            true
-
-
 
         }
     }

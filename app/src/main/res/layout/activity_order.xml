@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/SepatuOrd"
+        android:id="@+id/menuOrd"
         android:textSize="25sp"
         android:textStyle="bold"
         android:text="Nama Menu"
@@ -37,7 +37,7 @@
         android:textColor="@color/black"
         android:layout_toRightOf="@+id/imgOrder"
         android:layout_toEndOf="@+id/imgOrder"
-        android:layout_below="@+id/SepatuOrd"
+        android:layout_below="@+id/menuOrd"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"/>
@@ -127,30 +127,13 @@
         android:textColor="@color/black"
         android:text="0"/>
 
-    <Button
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/OrderLagi"
-        android:backgroundTint="@color/black"
-        android:layout_below="@id/JmlOrd"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="50dp"
-        android:text="Order Lagi"
-        android:textColor="@color/white"
-        android:textSize="15dp"/>
 
-    <Button
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/Bayar"
-        android:layout_below="@id/JmlOrd"
-        android:layout_marginStart="220dp"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="50dp"
-        android:text="Bayar"
-        android:textSize="15dp"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/white"/>
+   <Button
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/btnbayar"
+       android:text="Bayar"
+       android:layout_marginLeft="65dp"
+       android:layout_marginTop="250dp"/>
 
 </RelativeLayout>

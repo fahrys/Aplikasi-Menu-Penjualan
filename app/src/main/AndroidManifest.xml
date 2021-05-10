@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LatihanKu">
-        <activity android:name=".Order"></activity>
+        <activity android:name=".Hasil"></activity>
+        <activity android:name=".Order" />
         <activity android:name=".Bayar" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Makanan" />

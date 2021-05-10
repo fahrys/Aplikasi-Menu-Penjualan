@@ -55,13 +55,22 @@
             android:layout_height="wrap_content"
             android:id="@+id/etemail"/>
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirm"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:id="@+id/btnconfirm"/>
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnconfirm"
+                android:text="Confirm" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
